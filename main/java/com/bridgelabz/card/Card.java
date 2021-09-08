@@ -1,11 +1,11 @@
 package com.bridgelabz.card;
 
 /**
- * @author tushar.kasturi_ymedi This class consist of cards class
- * @param suits defines the suits
- * @param ranks defines the ranks
- * @param deck  its a integer array of deck
- * @param cardCount keeps the count of cards in the deck
+ * @author tushar.kasturi_ymedi This class consist of Card class
+ * @param suits This defines the suits
+ * @param ranks This defines the ranks
+ * @param deck  This is a integer array of deck
+ * @param cardCount This keeps the count of cards in the deck
  */
 public class Card {
 
