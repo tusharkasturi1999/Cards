@@ -28,5 +28,16 @@ public class Player {
 		// players contain 9 cards of individual player
 		ArrayList<individualPlayer> players = new ArrayList<individualPlayer>(noOfPlayers);
 	}
+	
+    /**
+     * Method to sequence the players order
+     */
+    public void orderPlayer()
+    {
+       ArrayList<Integer> sequencePlayer=new ArrayList<Integer>(noOfPlayers);
+       for(int i=0;i<noOfPlayers;i++)
+           sequencePlayer.add(i);
+       Collections.shuffle(sequencePlayer);
+    }
 
 }
