@@ -13,9 +13,9 @@ public class GameDriver {
 			n = sc.nextInt();
 		}
 		sc.close();
-		Player player = new Player(n);
-		player.orderPlayer();
-
+        Player player=new Player(n);
+        player.orderPlayer();
+        player.cardDistribution();
 	}
 
 }

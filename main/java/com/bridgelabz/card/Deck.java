@@ -3,7 +3,7 @@ package com.bridgelabz.card;
 import java.util.*;
 
 public class Deck {
-	private List<Card> cards;
+	private ArrayList<Card> cards;
 	/**
 	 * Constructs a standard deck of 52 cards.
 	 */
@@ -26,5 +26,9 @@ public class Deck {
 	public void shuffle()
 	{
 	    Collections.shuffle(cards);
+	}
+
+	public ArrayList<Card> getCards() {
+		return cards;
 	}
 }
