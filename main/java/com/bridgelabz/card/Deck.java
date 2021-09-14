@@ -19,4 +19,12 @@ public class Deck {
 			}
 		}
 	}
+	
+	/**
+	 * Method to shuffle the 52 cards
+	 */
+	public void shuffle()
+	{
+	    Collections.shuffle(cards);
+	}
 }

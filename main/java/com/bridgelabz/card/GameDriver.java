@@ -14,6 +14,7 @@ public class GameDriver {
 		}
 		sc.close();
 		Player player = new Player(n);
+		player.orderPlayer();
 
 	}
 

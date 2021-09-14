@@ -39,5 +39,6 @@ public class Player {
            sequencePlayer.add(i);
        Collections.shuffle(sequencePlayer);
     }
+    
 
 }
