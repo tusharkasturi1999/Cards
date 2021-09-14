@@ -16,6 +16,7 @@ public class GameDriver {
         Player player=new Player(n);
         player.orderPlayer();
         player.cardDistribution();
+        player.verifyCards();
 	}
 
 }
