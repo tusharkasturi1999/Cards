@@ -9,25 +9,28 @@ package com.bridgelabz.card;
  */
 public class Card {
 
-	private final String[] deck = new String[52];
-	private final String[] suits = { "Spades", "Hearts", "Diamonds", "Clubs" };
-	private final String[] ranks = { "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace" };
-	private static int cardCount = 0;
+	private final String rank;
+	private final String suit;
 
-	//This method assigns card to the deck
-	public void initialize() {
-		for (int sIndex = 0; sIndex < ranks.length; sIndex++) {
-			for (int rIndex = 0; rIndex < suits.length; rIndex++) {
-				deck[cardCount] = ranks[sIndex] + " of " + suits[rIndex];
-				cardCount++;
-			}
-		}
+	/**
+	 * Constructs a card of the given rank and suit.
+	 */
+	public Card(String suits, String ranks) {
+		this.rank = suits;
+		this.suit = ranks;
 	}
 
-	// This is the main class
-	public static void main(String[] args) {
-		System.out.println("Welcome to Card Game");
-		Card deck = new Card();
-		deck.initialize();
+	/**
+	 * Gets the card's rank.
+	 */
+	public String getRank() {
+		return this.rank;
+	}
+
+	/**
+	 * Gets the card's suit.
+	 */
+	public String getSuit() {
+		return this.suit;
 	}
 }
