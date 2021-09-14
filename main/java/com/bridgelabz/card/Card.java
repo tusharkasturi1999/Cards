@@ -7,6 +7,7 @@ package com.bridgelabz.card;
  * @param deck  This is a integer array of deck
  * @param cardCount This keeps the count of cards in the deck
  */
+
 public class Card {
 
 	private final String rank;
