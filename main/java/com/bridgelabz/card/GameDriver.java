@@ -2,6 +2,10 @@ package com.bridgelabz.card;
 
 import java.util.*;
 
+/**
+ * @author tushar.kasturi_ymedi
+ *
+ */
 public class GameDriver {
 	public static void main(String args[]) {
 		int n;
@@ -13,10 +17,10 @@ public class GameDriver {
 			n = sc.nextInt();
 		}
 		sc.close();
-        Player player=new Player(n);
-        player.orderPlayer();
-        player.cardDistribution();
-        player.verifyCards();
+		Player player = new Player(n);
+		player.orderPlayer();
+		player.cardDistribution();
+		player.verifyCards();
 	}
 
 }
